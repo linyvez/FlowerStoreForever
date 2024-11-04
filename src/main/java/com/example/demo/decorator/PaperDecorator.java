@@ -12,7 +12,7 @@ public class PaperDecorator extends ItemDecorator {
     private Item item;
 
     public double getPrice() {
-        return 13 + item.price();
+        return 13 + item.getPrice();
     }
 
     @Override

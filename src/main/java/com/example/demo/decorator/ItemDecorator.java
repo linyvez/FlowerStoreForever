@@ -1,5 +1,7 @@
 package com.example.demo.decorator;
 
-public abstract class ItemDecorator {
+import com.example.demo.flowerStore.model.Item;
+
+public abstract class ItemDecorator extends Item {
     public abstract String getDescription();
 }

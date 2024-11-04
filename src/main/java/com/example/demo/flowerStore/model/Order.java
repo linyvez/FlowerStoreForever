@@ -7,23 +7,19 @@ import com.example.demo.payment.Payment;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.Setter;
 
-@Getter @AllArgsConstructor
+@Setter @Getter @AllArgsConstructor
 public class Order {
     
     private List<Item> items;
     private Delivery delivery;
     private Payment payment;
 
-
-    public void setItems(List<Item> items) {
-        this.items = items;
-    }
-
     public double calculateTotalPrice() {
         double price = 0;
         for (Item item: items) {
-            price += item.price();
+            price += item.getPrice();
         }
         return price;
     }

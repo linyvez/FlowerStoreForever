@@ -12,7 +12,7 @@ public class RibbonDecorator extends ItemDecorator {
     private Item item;
 
     public double getPrice() {
-        return 40 + item.price();
+        return 40 + item.getPrice();
     }
 
     @Override

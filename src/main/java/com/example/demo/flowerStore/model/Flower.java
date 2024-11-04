@@ -31,7 +31,7 @@ public class Flower extends Item {
     }
 
     @Override
-    public double price() {
+    public double getPrice() {
         return price;
     }
 
